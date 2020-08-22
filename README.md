@@ -1,2 +1,2 @@
 # Assignments
-# This includes all assignments what i have been at Clarusway
+# This includes all assignments what I have been done at Clarusway
