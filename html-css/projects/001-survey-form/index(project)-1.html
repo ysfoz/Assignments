@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link rel="stylesheet" href="./son.css">
+    <link rel="stylesheet" href="style(project1).css">
 </head>
 <body>
     <div id="container">
@@ -13,17 +13,17 @@
         </div>
         <p id="explanation">Thank you for signing up at Netflix.Tell us more about your self</p>
         
-        <form action="result.html" id="survey-form">
+        <form action="./result.html" method="GET" id="survey-form">
             <div class="box">
-                <label> Name <br><input type="text" name="name" id="name" placeholder="enter your name"></label>
+                <label> Name <br><input type="text" name="name" id="name" placeholder="enter your name" required></label>
             </div>
 
             <div class="box">
-                <label> Age <br><input type="number" name="age" id="age" placeholder="age"></label>
+                <label> Age <br><input type="number" name="age" id="age" placeholder="age" min="18" max="65" required></label>
             </div>
 
             <div class="box">
-                <label> Email <br><input type="email" name="email" id="email" placeholder="enter your Email"></label>
+                <label> Email <br><input type="email" name="email" id="email" placeholder="enter your Email" required></label>
             </div>
 
             <div class="box">
