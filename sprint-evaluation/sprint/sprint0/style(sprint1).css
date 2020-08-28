@@ -1,0 +1,35 @@
+h1 {
+    font-size: 70px;
+    font-weight:500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3{
+    font-size: 25px;
+    font-weight: normal;
+
+}
+#name,
+#email,
+#surname{
+    width: 140px;
+    padding:4px;
+    margin-bottom:;
+}
+#role{
+    width: 140px;
+    height: 22px;
+    font-size: 13px;
+
+}
+#comment{
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#favorite{
+    width: 120px;
+    height: 22px;
+}
+.title{
+    margin-top: 0px;
+}
