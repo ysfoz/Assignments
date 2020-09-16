@@ -1,0 +1,72 @@
+
+#microphone img{
+    width: 15px;
+}
+#magniflying img{
+    width: 15px;
+}
+#google-logo{
+    width: 272px;
+    height: 92px;
+    display: block;
+    margin:109px auto 0;
+
+}
+.searchbar{
+    width: 583px;
+    height: 44px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin: 28px auto;
+    &:hover{
+        box-shadow: 0 0 10px lightgray;
+    }  
+}
+#magniflying{
+    border-radius: 5px;
+    position: relative;
+    top: 7px;
+    left: 20px;
+}
+#search{
+    height: 33px;
+    width: 460px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 30px;
+    top: 3px;
+    
+}
+#microphone{
+    position: relative;
+    top: 9px;
+    left: 50px;
+}
+.buttons-bar{
+    text-align: center;
+    & button{
+        height: 36px;
+        min-width: 120px;
+        background-color: #f2f2f2;
+        border: 1px solid #f8f8f8;
+        border-radius: 4px;
+        color: #5f6368;
+        &:hover{
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background-color: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            color: #222222;
+            cursor: pointer;
+        }
+    }
+}
+#lang{
+    text-align: center;
+    margin-top: 32px;
+    font-size: smaller;
+    & a{
+        color: #1967d2;
+        text-decoration: none;
+    }
+}

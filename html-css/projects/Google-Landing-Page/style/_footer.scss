@@ -1,0 +1,21 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    font-size: 15px;
+    line-height: 40px;
+    & p{
+        border-bottom: 1px solid #e4e4e4;
+        padding-left: 10px;
+        color: #5f6368;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    & #footer-leftbar{
+        float: left;
+    }
+    & #footer-rightbar{
+        float: right;
+    }
+}

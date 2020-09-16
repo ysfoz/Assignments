@@ -1,0 +1,20 @@
+body{
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+ul{
+    text-decoration: none;
+    & li{
+        display: inline-block;
+    }
+    & a,li{
+        color: #5f6368;
+        text-decoration: none;
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+        font-size: 13.5px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
