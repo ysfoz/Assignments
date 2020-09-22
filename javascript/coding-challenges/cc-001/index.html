@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Numbers</title>
+    <style>
+        body{
+            background: url('./images/fibonacci.jpg')no-repeat;
+            background-size: cover;
+            font-size: 50px;
+        }
+        .box{
+            position: relative;
+            left: 550px;
+
+
+        }
+        .container {
+           position: relative;
+           top: 300px;
+           left: 250px;
+             
+        }
+        #submit {
+            height: 20px;
+            width: 50px;
+            margin-top: 15px;
+            margin-left: 50px;
+        }
+
+        #result{
+            margin-top: 20px;
+            margin-left: 40px;
+            color: crimson;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="user-info">Give me a number that you want to learn result of Fibonacci</div>
+        <div class="box">
+            <input type="number" name="" id="number">
+        </div>
+        <div class="box" id="result"></div>
+        <div class="box" id="btn_1">
+            <button type="submit" name="submit" id="submit" value="Send">Send</button>
+        </div>
+        
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
