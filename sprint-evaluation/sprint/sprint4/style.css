@@ -1,0 +1,34 @@
+
+#container{
+    width: 30%;
+    height: 50vh;
+    background-color: rgb(156, 211, 134);
+    margin: auto;
+ 
+}
+header{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+main{
+    text-align: center;
+}
+main input {
+width: 70%;
+padding: 10px;
+font-size: large;
+}
+main button{
+    display:block;
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    background-color:aliceblue;
+    border-color: black;
+    border-radius: 10px;
+    
+}
