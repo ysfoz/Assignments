@@ -6,27 +6,44 @@ const romanButton = document.querySelector("#btnRoman");
 const resultNum = document.querySelector('#resultNum');
 const resultRoman = document.querySelector('#resultRoman');
 
-// numberButton.addEventListener("click", Converter)
 
-// S	0.5 (yarım) (Latince:Latince: Semis)
-// I	1 (bir) (Latince:Latince: mono)
-// V	5 (beş) (Latince:Latince: penta)
-// X	10 (on) (Latince:Latince: deka)
-// L	50 (elli) (Latince:Latince: quinquaginta)
-// C	100 (yüz) (Latince:Latince: Centum)
-// D	500 (beş yüz) (Latince:Latince: quingenti)
-// M	1000 (bin) (Latince:Latince: Mille)
+const numberList = { M:1000, D:500, C:100, L:50, X:10, V:5, I:1, S:0.5,}
 
-    
-const numberList = { M:1000,D:500, C:100,L:50,X:10,V:5,I : 1,S:0.5,}
-console.log(numberList.C,numberList.D)
-console.log(numberList.S+numberList.I)
-for (let i in numberList){
-    console.log(numberList[i])
-    
+
+
+numberButton.addEventListener("click", numberConverter)
+romanButton.addEventListener("click", romanConverter)
+
+
+
+let convertedNum = ''
+function numberConverter() {
+    let value = ''
+    let num = numberInput.value
+    for (let i in numberList){
+       value = Math.floor(num / numberList[i])
+        num = num % numberList[i]
+        convertedNum += i.repeat(value) 
+    }
+    resultNum.innerHTML = convertedNum
+    convertedNum = ''
+    numberInput.value = ''
+    numberInput.focus()
 }
 
-// 1- inputu alacagiz , for i ile aldigimiz inputu ister if input > numberList.i ise input / yada % olacak bakariz
-// 2- kalani bu sefer d ye boldurcez , o sekilde gidecek
-// 3- sayi sifir olursa ona ayri esitlik lazim
-// 4- roma sayisin cevirirkende split ile parcalayip degerine gore carpip toplariz counter eklemek gerekebilir her ikisinede
+let convertedRoman = 0
+function romanConverter() {
+    let numbers = [...romanInput.value.toUpperCase()]
+    for(let i = 0;i< numbers.length;i++){
+        for(let j in numberList){
+            if(numbers[i] === j){
+                convertedRoman += numberList[j]
+                resultRoman.innerHTML = convertedRoman
+            }
+        }
+        
+    }
+    convertedRoman = 0
+    romanInput.value = ''
+    romanInput.focus()
+}
